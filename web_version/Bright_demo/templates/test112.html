@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <header  style="background: blue">
+      <h2 >Wecome to Rainbow Intelligence Development Inc</h2>
+      <h4  >Address: 119 kent street, Charlottetown, PE C1A094</h4>
+      <hr/>
+    </header>
+      <nav>
+            {% for item in NAME %}
+            <a  href="/{{item.id}}">{{item.name}}</a>
+             {% endfor %}
+      </nav>
+        <p><b>We are committed to ongoing Professional Development
+        <br/>
+        and provide Emergent, Child-Directed, Developmentally
+        <br/>
+        Appropriate Curriculum</b></p>
+        <p>
+        <b> We participate in community-based field trips within walking </b>
+        <br/>
+            <b>distance:</b>
+
+        <ul>
+        <li>Confederation Centre Art Gallery & Library</li>
+
+        <li>Charlottetown Fire Station</li>
+
+        <li>Victoria Park</li>
+
+        <li>Confederation Landing & Peake's Quay</li>
+
+        <li>King's Square</li>
+
+        <li>Beaconsfield</li>
+
+        </ul>
+
+        <b>We also have the benefit of using the AFC aerobic room</b>
+        <br/>
+
+            <b> for regular physical activity and play:</b>
+        <ul>
+
+        <li> ball play</li>
+
+            <li>yoga</li>
+
+            <li>obstacle courses</li>
+
+            <li>parachute play</li>
+        </ul>
+        </p>
+
+    {% load static %}
+    <img src="{% static 'Bright_demo_app/7.jpg' %}" alt="My image">
+
+</body>
+</html>

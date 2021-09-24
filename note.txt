@@ -1,0 +1,5 @@
+I develop two version studentManagement system for my original daycare.
+
+1.desktop version: it is based on regular python structure, which includes a sqlite3 database.
+
+2.web version: it is based on django structure(sqlite3 included) for web app.

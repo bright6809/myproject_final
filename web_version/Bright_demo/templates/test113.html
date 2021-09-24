@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <h3 style="background: blue">Student Information</h3>
+    {% for item in NAME2 %}
+    ID: {{item.id}} | NAME：{{item.name}} | AGE：{{item.age}}  | GENDER：{{item.gender}}
+    <br/>
+    PARENT: {{item.parent_name}} | TEL: {{item.tel}} | ADDRESS: {{item.address}} | PAYMENT: {{item.payment_info}}
+    <br/>
+    TEACHER: {{item.teacher}} | MEMO:{{item.memo}}
+    <br/>
+    <hr/>
+
+    <a href="/children/{{item.id}}"> Delete   </a>
+
+        <a href="/">Home</a>
+
+    {% endfor %}
+
+</body>
+</html>

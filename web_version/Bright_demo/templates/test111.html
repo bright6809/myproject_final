@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <h3 STYLE="background: blue">Welcome to {{daycare_name}} center(Daycare ID:{{daycare_id}})</h3>
+
+      <h4>Students name lists:</h4>
+        <ul>
+         {% for item in NAME %}
+         <li><a href="/student/{{item.id}}">Name：{{item.name}} </a>    | <span>Student ID: {{item.id}}</span></li>
+
+         {% endfor %}
+        </ul>
+         <p><a href="/creat_student">Add/Modify student</a></p>
+         <p><a href="/">Home</a></p>
+
+
+
+
+</body>
+</html>
